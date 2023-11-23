@@ -26,6 +26,6 @@ fetch("pagine.txt?n=7").then((res) => res.text()).then((text) => {
 onscroll = (_ev) => {
     let banners = document.getElementsByClassName("banner");
     for(let i = 0; i < banners.length; i++) {
-        banners[i].style.backgroundPosition = "0px calc(".concat(scrollY * 0.5, "px + 50%)");
+        banners[i].style.backgroundPosition = "50% calc(".concat(scrollY * 0.5, "px + 50%)");
     }
 }
