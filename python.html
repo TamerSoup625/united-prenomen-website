@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<link rel="stylesheet" href="style.css?n=7">
+		<link rel="icon" type="image/x-icon" href="emblema2.png">
+		<title>Prenomeni Uniti</title>
+	</head>
+	<body>
+		<custom class=bannerdiv bg-source="bandiera.png">
+			<h1>La lingua Python</h1>
+		</custom>
+		<section class="giustifica">
+			<p>Python è un <a href="https://www.python.org/" target=blank>linguaggio di programmazione</a> conosciuto in tutto il mondo, ma ha un significato in più nei Prenomeni Uniti.</p>
+			<p>
+				Qui Python è anche una lingua di <b>comunicazione</b> utilizzata per estendere le funzionalità di un'altra lingua.<br>
+				L'<i>Accademia Pythonmei</i> è il principale punto di riferimento per la lingua Python come lingua di comunicazione.
+			</p>
+			<custom class="sectionstart" name="Come funziona" ide=howto></custom>
+			<p>
+				Python da sola non è una lingua di comunicazione, bisogna partire da un'altra lingua. In questi esempi useremo l'italiano.<br>
+				Quando si parla in Python, dici a tutti gli effetti del codice Python eseguibile da un computer. In questo caso, spetta a chi stai parlando ad eseguire il codice.<br>
+			</p>
+			<p>
+				Chiamare la funzione <code>print</code> equivale a dire qualcosa nella lingua base:
+			</p>
+			<table class="confronto">
+				<thead><tr><th>Python</th><th></th><th>Italiano</th></tr></thead>
+				<tfoot><tr><td><pre>print("Ciao, come stai?")</pre></td><td>&harr;</td><td>Ciao, come stai?</td></tr></tfoot>
+			</table>
+			<p>Se vuoi, dichiara la variabile <code>__lang__</code> per specificare la lingua che verrà utilizzata. Viene utilizzato lo standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a>.</p>
+			<table class="confronto">
+				<thead><tr><th>Python</th><th></th><th>Italiano</th></tr></thead>
+				<tfoot><tr><td><pre>__lang__ = "it"</pre></td><td>&harr;</td><td>Uso l'italiano. {viene detto senza usare l'italiano}</td></tr></tfoot>
+			</table>
+			<p>Come ultima funzionalità, la funzione <code>input</code> può essere usata per eseguire codice in base ad una domanda che il ricevitore deve chiedersi mentalmente.</p>
+			<table class="confronto">
+				<thead><tr><th>Python</th><th></th><th>Italiano</th></tr></thead>
+				<tfoot><tr><td><pre>print(input("Quanti anni hai?"))</pre></td><td>&harr;</td><td>{I tuoi anni}</td></tr></tfoot>
+			</table>
+			<p>Da notare la differenza tra <code>print</code> e <code>input</code>. <code>print</code> equivale a dire qualcosa con la lingua base, mentre con <code>input</code> fai una domanda mentale all'interlocutore, e l'interlocutore non deve rispondere ma invece usare il valore restituito per eseguire il codice.</p>
+			<custom class="sectionstart" name="Pronomi" ide=pronomi></custom>
+			<p>I pronomi in certi case possono essere ambigui. L'Accademia Pythonmei consiglia di <b>non</b> usare pronomi e di invece definire un nome come variabile e poi usare la <a href="https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals">formattazione della stringa</a>.</p>
+			<pre>
+lui = "Francia Francesco"
+print(f"{lui} è il Monarca Ovest dei Prenomeni Uniti. {lui} rappresenta la Nazione dell'Ostigen.")</pre>
+			<custom class="sectionstart" name="Contenitori di dati" ide=contenitori></custom>
+			<p>Anche se non sarebbe corretto nelle lingue basi, la Pythonmei consiglia di usare le liste o gli insiemi se si hanno più soggetti.</p>
+			<pre>
+loro = ["Francia Francesco", "Giunta Daniele"]
+print(f"{loro} sono i Monarchi dei Prenomeni Uniti. {loro} rappresentano lo stato.")</pre>
+			<custom class="sectionstart" name="Condizioni" ide=condizioni></custom>
+			<p>Si può usare <code>input</code> per formulare frasi condizionali senza usare il congiuntivo o il condizionale della lingua base. Si consiglia di non usare il casting al tipo <code>bool</code> di Python ma di invece usare gli operatori di confronto.</p>
+			<pre>
+la = "al supermercato"
+print(f"Vai {la} e prendi un cartone di latte.")
+if(input("Quando vai {la} ci sono gli avocado? (s/n)") == "s"):
+	print("Prendi anche 6 avocado.")</pre>
+			<custom class="sectionstart" name="Espressioni" ide=espressioni></custom>
+			<p>Invece di usare <code>input</code>, si consiglia di usare le espressioni di Python quando possibile.</p>
+			<pre>
+print("Quanto fa la radice di 2?")
+from math import sqrt
+print(sqrt(2), "!", sep="")</pre>
+			<br>
+		</section>
+		<script src="builder.js?n=11"></script>
+	</body>
+</html>
