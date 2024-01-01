@@ -1,0 +1,27 @@
+name: Bust Caches
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+      # You can test your matrix by printing the current Python version
+      - name: Run Python file
+        run: python ".github/workflows/cache_buster.py" --noinput
+      - name: Commit changes
+        run: |
+          git config --global user.name TamerSoup625
+          git config --global user.email danielegiunta2007@gmail.com
+          git add -A
+          git commit -m "Cache Busting"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
