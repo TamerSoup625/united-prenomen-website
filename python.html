@@ -10,7 +10,8 @@
 		<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate">
 		<meta http-equiv="Pragma" content="no-cache">
 		<meta http-equiv="Expires" content="0">
-		<link rel="stylesheet" href="style.css?cachebuster=c7dc7a78d9324b1fH">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css?cachebuster=NEWHASH">
 		<link rel="icon" type="image/x-icon" href="emblema2.png">
 		<title>Prenomeni Uniti</title>
 	</head>
@@ -34,24 +35,25 @@
 			</p>
 			<table class="confronto">
 				<thead><tr><th>Python</th><th></th><th>Italiano</th></tr></thead>
-				<tfoot><tr><td><pre>print("Ciao, come stai?")</pre></td><td>&harr;</td><td>Ciao, come stai?</td></tr></tfoot>
+				<tfoot><tr><td><code>print("Ciao, come stai?")</code></td><td>&harr;</td><td>Ciao, come stai?</td></tr></tfoot>
 			</table>
 			<p>Se vuoi, dichiara la variabile <code>__lang__</code> per specificare la lingua che verrà utilizzata. Viene utilizzato lo standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a>.</p>
 			<table class="confronto">
 				<thead><tr><th>Python</th><th></th><th>Italiano</th></tr></thead>
-				<tfoot><tr><td><pre>__lang__ = "it"</pre></td><td>&harr;</td><td>Uso l'italiano. {viene detto senza usare l'italiano}</td></tr></tfoot>
+				<tfoot><tr><td><code>__lang__ = "it"</code></td><td>&harr;</td><td>Uso l'italiano. {viene detto senza usare l'italiano}</td></tr></tfoot>
 			</table>
 			<p>Come ultima funzionalità, la funzione <code>input</code> può essere usata per eseguire codice in base ad una domanda che il ricevitore deve chiedersi mentalmente.</p>
 			<table class="confronto">
 				<thead><tr><th>Python</th><th></th><th>Italiano</th></tr></thead>
-				<tfoot><tr><td><pre>print(input("Quanti anni hai?"))</pre></td><td>&harr;</td><td>{I tuoi anni}</td></tr></tfoot>
+				<tfoot><tr><td><code>print(input("Quanti anni hai?"))</code></td><td>&harr;</td><td>{I tuoi anni}</td></tr></tfoot>
 			</table>
 			<p>Da notare la differenza tra <code>print</code> e <code>input</code>. <code>print</code> equivale a dire qualcosa con la lingua base, mentre con <code>input</code> fai una domanda mentale all'interlocutore, e l'interlocutore non deve rispondere ma invece usare il valore restituito per eseguire il codice.</p>
 			<custom class="sectionstart" name="Pronomi" ide=pronomi></custom>
 			<p>I pronomi in certi case possono essere ambigui. L'Accademia Pythonmei consiglia di <b>non</b> usare pronomi e di invece definire un nome come variabile e poi usare la <a href="https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals">formattazione della stringa</a>.</p>
 			<pre>
 lui = "Francia Francesco"
-print(f"{lui} è il Monarca Ovest dei Prenomeni Uniti. {lui} rappresenta la Nazione dell'Ostigen.")</pre>
+print(f"{lui} è il Monarca Ovest dei Prenomeni Uniti.")
+print(f"{lui} rappresenta la Nazione dell'Ostigen.")</pre>
 			<custom class="sectionstart" name="Contenitori di dati" ide=contenitori></custom>
 			<p>Anche se non sarebbe corretto nelle lingue basi, la Pythonmei consiglia di usare le liste o gli insiemi se si hanno più soggetti.</p>
 			<pre>
@@ -72,6 +74,6 @@ from math import sqrt
 print(sqrt(2), "!", sep="")</pre>
 			<br>
 		</section>
-		<script src="builder.js?cachebuster=cc34a6e3b80291faH"></script>
+		<script src="builder.js?cachebuster=NEWHASH"></script>
 	</body>
 </html>

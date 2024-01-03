@@ -9,7 +9,8 @@
 
 body, html {
 	height: 100%;
-	font-size: 110%;
+	font-size: 100%;
+	/*font-size: 110%;*/
 }
 
 div.banner {
@@ -53,14 +54,14 @@ table.bicolonne {
 }
 
 table.bicolonne th {
-	width: 150px;
+	width: min(150pt, 20vw);
 	text-align: left;
-	border-right: 4px solid;
+	border-right: 4pt solid;
 	border-color: #ffffff;
 }
 
 table.bicolonne th, table.bicolonne td {
-	padding: 12px 6px;
+	padding: 12pt 6pt;
 }
 
 table.bicolonne tr:nth-child(even) {
@@ -72,20 +73,26 @@ div.imgdidascalia {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 6px;
+	padding: 6pt;
 	width: 100%;
 }
 
-div.gruppoh {
+div.gruppoimg {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 6px;
+	padding: 6pt;
+}
+
+@media screen and (max-width: 100vh) {
+	div.gruppoimg {
+		flex-direction: column;
+	}
 }
 
 .bandierabordo {
-	border: 1px solid #000000;
+	border: 1pt solid #000000;
 }
 
 div.header {
@@ -93,16 +100,16 @@ div.header {
 	top: 0;
 	right: 0;
 	background-color: #c000ff88;
-	margin-top: 8px;
-	margin-right: 8px;
-	padding: 4px;
+	margin-top: 8pt;
+	margin-right: 8pt;
+	padding: 4pt;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
 
 div.header img {
-	width: 40px;
+	width: 32pt;
 }
 
 div.headcontent {
@@ -121,11 +128,19 @@ div.header a {
 code, pre {
 	font-family: monospace;
 	background-color: #dddddd;
-	padding: 3px;
+	padding: 3pt;
+}
+
+pre {
+	overflow-x: auto;
 }
 
 table.confronto th, table.confronto td {
-	padding: 6px 12px;
+	padding: 6pt 12pt;
+}
+
+table.confronto {
+	overflow-x: auto;
 }
 
 /*div.start-section {
@@ -136,7 +151,7 @@ table.confronto th, table.confronto td {
 	text-align: center;
 	display: flex;
 	flex-flow: column;
-	margin-top: 8px;
+	margin-top: 8pt;
 }
 
 div.start-section * {
