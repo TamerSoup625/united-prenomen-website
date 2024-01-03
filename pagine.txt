@@ -1,10 +1,10 @@
 Home
-index.html?cachebuster=NEWHASH
+index.html?cachebuster=fec89ce3c6817c35H
 Storia
-storia.html?cachebuster=NEWHASH
+storia.html?cachebuster=245e38723772a6ccH
 Governo
-governo.html?cachebuster=NEWHASH
+governo.html?cachebuster=d1ec47fa4a142752H
 Enti Nazionali
-enti_nazionali.html?cachebuster=NEWHASH
+enti_nazionali.html?cachebuster=e3dd2ffeb62e7b7bH
 Lingua Python
-python.html?cachebuster=NEWHASH
+python.html?cachebuster=3cc73b7875deb390H
