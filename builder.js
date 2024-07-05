@@ -11,7 +11,7 @@ for(let i = 0; i < customTags.length; i++) {
         customTags[i].innerHTML = "".concat("<div class=\"banner\" style=\"background-image: linear-gradient(#00000088, #00000088), url(", backgroundSource,")\"><div class=\"banner-testo\">", customTags[i].innerHTML, "</div></div>")
     }
 }
-fetch("pagine.txt?cachebuster=b02d53c66ce7664eH").then((res) => res.text()).then((text) => {
+fetch("pagine.txt?cachebuster=0cc10bb121559b59H").then((res) => res.text()).then((text) => {
         let splitted = text.split("\n");
         let full_text = "";
 
@@ -19,7 +19,7 @@ fetch("pagine.txt?cachebuster=b02d53c66ce7664eH").then((res) => res.text()).then
             full_text = full_text.concat("<p><a href=".concat(splitted[i + 1], ">", splitted[i], "</a></p>"));
         }
 
-        document.getElementsByTagName("body")[0].innerHTML += "<div class=header><img src=\"icona_tendina.png?cachebuster=aa3dc82885c7809cH\"><div class=headcontent>".concat(full_text, "</div></div>");
+        document.getElementsByTagName("body")[0].innerHTML += "<div class=header><img src=\"icona_tendina.png?cachebuster=a8b940108fa9e312H\"><div class=headcontent>".concat(full_text, "</div></div>");
 }).catch((e) => console.error(e));
 
 // Parte dinamica

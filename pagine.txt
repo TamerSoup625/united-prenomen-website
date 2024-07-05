@@ -1,10 +1,10 @@
 Home
-index.html?cachebuster=78ec3345fd8c2af0H
+index.html?cachebuster=f21f34dc77c2211dH
 Storia
-storia.html?cachebuster=e3f5a4fea6f4e4f4H
+storia.html?cachebuster=59ee2dea5783cc88H
 Governo
-governo.html?cachebuster=78f1e7e019e49b05H
+governo.html?cachebuster=140c49c53d02baabH
 Enti Nazionali
-enti_nazionali.html?cachebuster=746d77afbecc8da3H
+enti_nazionali.html?cachebuster=8b7643c976e4e2daH
 Lingua Python
-python.html?cachebuster=438605b458e6feacH
+python.html?cachebuster=e041d9a9859d6892H
